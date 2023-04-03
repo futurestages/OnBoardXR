@@ -1,7 +1,30 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* fallback font */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Safari and Google Chrome */
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
+}
+
+/* fallback font */
+@media screen and (min-resolution: 2dppx) {
+  /* Firefox */
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+/* fallback font */
+@media screen and (min-resolution: 192dpi) {
+  /* Opera */
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
   
   /* Navbar */
   .navbar {
