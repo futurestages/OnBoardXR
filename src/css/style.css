@@ -25,6 +25,17 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
+
+/* Add Font Awesome styles */
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+/* Style the icon */
+.my-icon {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 24px;
+  color: #333;
+}
   
   /* Navbar */
   .navbar {
