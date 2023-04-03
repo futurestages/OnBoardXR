@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #2a2a2a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* About section */
+  .about-section {
+    background-color: #e3c044;
+    color: #2a2a2a;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  /* Portfolio section */
+  .portfolio-section {
+    background-color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .portfolio-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-item {
+    border: 2px solid #2a2a2a;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .portfolio-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .portfolio-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Leads form */
+  .leads-form {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .leads-form h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .leads-form input[type="email"] {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+  .leads-form button {
+    background-color: #e3c044;
+    color: #2a2a2a;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .leads-form button:hover {
+    background-color: #fff;
+    color: #2a2a2a;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
