@@ -149,132 +149,6 @@ body {
   }
   
   /* Portfolio section */
-
-/* Shows section */
-.shows-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.show-card {
-  position: relative;
-  margin: 20px;
-  width: 300px;
-  height: 420px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: transform 0.2s ease-out;
-}
-
-.show-card:hover {
-  transform: translateY(-10px);
-}
-
-.show-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.show-card .show-card-content {
-  padding: 20px;
-}
-
-.show-card .show-card-content h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.show-card .show-card-content h4 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #a8a8a8;
-}
-
-.show-card .show-card-content p {
-  font-size: 16px;
-  line-height: 1.4;
-  margin-bottom: 20px;
-}
-
-.show-card .show-card-content .show-card-category {
-  display: inline-block;
-  background-color: #585858;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin-right: 10px;
-}
-
-.show-card .show-card-content .show-card-link {
-  display: inline-block;
-  background-color: #ef6464;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 5px 10px;
-  border-radius: 20px;
-}
-
-.show-card .show-card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.2s ease-out;
-}
-
-.show-card:hover .show-card-overlay {
-  opacity: 1;
-}
-
-.show-card .show-card-overlay h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 28px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.show-card .show-card-overlay h4 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-.show-card .show-card-overlay .show-card-artist {
-  display: inline-block;
-  background-color: #ffffff;
-  color: #1c1c1c;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin-right: 10px;
-}
-
-.show-card .show-card-overlay .show-card-tags {
-  margin-top: 10px;
-}
-
   .portfolio {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -289,6 +163,8 @@ body {
     .portfolio-item img {
       max-width: 100%;
       transition: transform 0.5s ease;
+      border-radius: 25px;
+      }
     }
     
     .portfolio-item:hover img {
