@@ -6,27 +6,37 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbar-logo"><i class="fas fa-flag" style="color: black;"></i>OnBoard<b>XR</b></div>
-      <ul class="navbar-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#connect">Connect</a></li>
-      </ul>
-    </nav>
+   <div class="navbar" id="myNavbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Blog</a>
+    <div class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+  <!-- JavaScript for the navigation menu button functionality -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 
     <!-- About section -->
-    <section id="about">
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="container">
-        <h2>About Me</h2>
+        <h2>about</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis faucibus mauris. Curabitur quis odio leo. Pellentesque porta justo sed tortor dictum, vel dapibus turpis feugiat. Integer eget mi enim.</p>
       </div>
-    </section></section>
+    </section>
 
     <!-- Portfolio section -->
-    <section id="work">
-        <div class="portfolio">
+        <div class="portfolio" id="work">
             <div class="portfolio-item">
               <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mindland-Square.png" alt="Project 1">
               <div class="overlay">
@@ -95,8 +105,7 @@
     </section>
 
     <!-- Leads form -->
-    <section id="connect">
-    <section class="leads-form">
+    <section class="leads-form" id="connet">
       <div class="container">
         <h2>Get in Touch</h2>
         <form>
@@ -104,10 +113,10 @@
           <button type="submit">Subscribe</button>
         </form>
       </div>
-    </section></section>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
           <div class="social-icons">
             <a href="#"><i class="fa fa-discord"></i></a>
