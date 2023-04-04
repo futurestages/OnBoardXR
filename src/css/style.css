@@ -38,115 +38,125 @@ body {
 }
   
   /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-item {
-    margin-right: 20px;
-  }
-  
-  .nav-link {
-    font-size: 18px;
-    font-weight: 500;
-    color: #000;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .nav-link:hover {
-    color: #0057FF;
-  }
-    
-  .navbar-toggler {
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    margin-right: 20px;
-  }
-  
-  .navbar-toggler span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    margin-bottom: 6px;
-    position: relative;
-    background: #000;
-    border-radius: 2px;
-  }
-  
-  .navbar-toggler span:last-child {
-    margin-bottom: 0;
-  }
-  
-  .navbar-toggler.open span:first-child {
-    transform: rotate(45deg);
-    top: 5px;
-  }
-  
-  .navbar-toggler.open span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .navbar-toggler.open span:last-child {
-    transform: rotate(-45deg);
-    top: -5px;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      height: auto;
-    }
-    
-    .navbar-brand {
-      margin-bottom: 20px;
-    }
-    
-    .navbar-nav {
-      flex-direction: column;
-    }
-    
-    .nav-item {
-      margin-bottom: 10px;
-      margin-right: 0;
-    }
-    
-    .navbar-collapse {
-      display: none;
-    }
-    
-    .navbar-toggler {
-      display: block;
-    }
-    
-    .navbar-toggler.open .navbar-collapse {
-      display: block;
-    }
-  }
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff00ff;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Dropdown Links */
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-links li {
+  margin: 10px 0;
+}
+
+.dropdown-links a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.dropdown-links a:hover {
+  color: #ff00ff;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  margin-left: auto;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  font-size: 16px;
+  color: #000000;
+}
+
+.search-bar input[type="submit"] {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  color: #000000;
+  font-size: 16px;
+}
   
   /* Portfolio section */
   .portfolio {
@@ -165,7 +175,6 @@ body {
       transition: transform 0.5s ease;
       border-radius: 25px;
       }
-    }
     
     .portfolio-item:hover img {
       transform: scale(1.2);
