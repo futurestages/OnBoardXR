@@ -1,161 +1,1355 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OnBoardXR</title>
-    <link rel="stylesheet" type="text/css" href="https://futurestages.github.io/onboardxr/src/css/style.css">
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">
-          <img src="logo.png" alt="Company Logo">
-        </div>
-        <div class="hamburger-menu">
-          <div class="hamburger-menu__line"></div>
-          <div class="hamburger-menu__line"></div>
-          <div class="hamburger-menu__line"></div>
-        </div>
-        <ul class="menu">
-          <li><a href="#">About</a>
-            <ul class="sub-menu">
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Our Clients</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Work</a>
-            <ul class="sub-menu">
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Services</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Connect</a>
-            <ul class="sub-menu">
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </li>
-          <li class="search">
-            <form>
-              <input type="text" placeholder="Search...">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </li>
-        </ul>
-      </nav>
-        
-  <!-- JavaScript for the navigation menu button functionality -->
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myNavbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-  </script>
-
-    <!-- About section -->
-    <section class="about-section" id="about">
-      <div class="container">
-        <h2>about</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis faucibus mauris. Curabitur quis odio leo. Pellentesque porta justo sed tortor dictum, vel dapibus turpis feugiat. Integer eget mi enim.</p>
+    <!-- alert -->
+    <div
+      class="alert mb-0 alert-warning alert-dismissible fade show"
+      role="alert"
+    >
+      <div class="container d-flex justify-content-between align-items-start">
+        <strong class="text-white lead"
+          >This is a banner pop-up that we can easily update with news.</strong
+        >
+        <button
+          type="button"
+          data-bs-dismiss="alert"
+          class="btn lead"
+          aria-label="Close"
+        >
+          <i class="fa fa-times lead text-white"></i>
+        </button>
       </div>
-    </section>
+    </div>
+    <!-- alert -->
 
-    <!-- Portfolio section -->
-        <div class="portfolio" id="work">
-            <div class="portfolio-item">
-              <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mindland-Square.png" alt="Project 1">
-              <div class="overlay">
-                <h3>Project 1 Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="portfolio-item">
-              <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Magid-Square.png" alt="Project 2">
-              <div class="overlay">
-                <h3>Project 2 Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="portfolio-item">
-              <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Windward-Wandering-Square.png" alt="Project 3">
-              <div class="overlay">
-                <h3>Project 3 Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mindland-Square.png" alt="Project 1">
-                <div class="overlay">
-                  <h3>Project 4 Title</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Magid-Square.png" alt="Project 2">
-                <div class="overlay">
-                  <h3>Project 5 Title</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Windward-Wandering-Square.png" alt="Project 3">
-                <div class="overlay">
-                  <h3>Project 6 Title</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mindland-Square.png" alt="Project 1">
-                <div class="overlay">
-                  <h3>Project 7 Title</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Magid-Square.png" alt="Project 2">
-                <div class="overlay">
-                  <h3>Project 8 Title</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <img src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Windward-Wandering-Square.png" alt="Project 3">
-                <div class="overlay">
-                  <h3>Project 9 Title</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-            <!-- More portfolio items here -->
-          </div>          
-    </section>
-
-    <!-- Leads form -->
-    <section class="leads-form" id="connet">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container">
-        <h2>Get in Touch</h2>
-        <form>
-          <input type="email" placeholder="Enter your email address">
-          <button type="submit">Subscribe</button>
-        </form>
+        <a class="navbar-brand" href="./index.html">
+          <img src="img/logo.png" class="logo" alt="" />
+        </a>
+        <button
+          class="navbar-toggler border-0 outline-0 shadow-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto gap-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs">SHOWCASE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs">TOOLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs">ABOUT</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-5" role="search">
+            <input
+              class="form-control me-2 border-yellow rounded-0 bg-transparent text-white"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
       </div>
-    </section>
+    </nav>
+    <!-- navbar -->
 
-    <!-- Footer -->
-    <footer class="footer" id="footer">
-        <div class="container">
-          <div class="social-icons">
-            <a href="#"><i class="fa fa-discord"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            
+    <!-- hero -->
+    <section class="hero py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-7 m-auto">
+            <h1 class="text-white fw-bold title">
+              Live Immersive Performances
+            </h1>
+            <h4 class="text-white mb-5">
+              We onboard the artists and audiences of the future by fostering
+              tools and talent for the future of live events in the 3D Web.
+            </h4>
+            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="btn btn-yellow"> Have a Code? </a>
           </div>
-          &copy; ONBOARDXR 2023
+          <div class="col-md-5 m-auto">
+            <div class="card border-0 mt-5 rounded-4 overflow-hidden bg-black">
+              <div
+                class="img-holder position-relative rounded-4 overflow-hidden"
+              >
+                <img src="img/hero.gif" class="img-fluid w-100" alt="" />
+                <div class="overlay">
+                  <h3 class="text-white fw-bold mb-5">Sample Lobby</h3>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="">
+                      <img src="img/keys.png" class="img-fluid keys" alt="" />
+                      <p class="text-white">Use your keyboard to move</p>
+                    </div>
+                    <div class="">
+                      <img src="img/cursor.png" class="img-fluid keys" alt="" />
+                      <p class="text-white">Use your mouse to rotate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body bg-black">
+                <h4 class="text-white mb-0">XR Theater Lobby</h4>
+                <p class="text-white">
+                  Test your controls in our Sponsor Lobby
+                </p>
+                <div class="text-end">
+                  <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="btn btn-yellow"> Enter </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
+      </div>
+    </section>
+    <!-- hero -->
+
+    <!-- showcase -->
+    <section class="showcase py-5">
+      <div class="container">
+        <h4 class="text-yellow mb-5 text-uppercase fw-bold">
+          IMMERSIVE SHOWCASES
+        </h4>
+
+        <div class="row g-3">
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div
+              class="card position-relative border-0 rounded-3 overflow-hidden"
+            >
+              <div class="img-holder position-relative">
+                <img src="img/show.png" class="show-img img-fluid" alt="" />
+                <div class="overlay">
+                  <h5 class="text-white fw-bold">August '22</h5>
+                  <div
+                    class="d-flex mt-5 justify-content-between align-items-center"
+                  >
+                    <img src="img/obxr.png" class="img-fluid obxr" alt="" />
+                    <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body bg-black">
+                <p class="text-white mb-0 fw-bold fs-14">Mindland</p>
+                <p class="text-white fs-12 mb-1">August '15</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="img/ar.png" class="img-fluid obxr" alt="" />
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow fs-14 px-2 py-1 rounded-pill"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+
+              <div class="hover-content p-2">
+                <h6 class="text-white fw-bold">
+                  OS, BROWSER & DEVICE AGNOSTIC
+                </h6>
+                <p class="fs-14 text-white mb-0">
+                  Our powerful rendering technology empowers businesses to
+                  maximize reach while simplifying 3D and XR content creation,
+                  curation and consumption
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- showcase -->
+
+    <!-- awards -->
+    <section class="awards py-5">
+      <div class="container">
+        <h4 class="text-yellow mb-5 text-uppercase fw-bold">
+          AWARDS AND FESTIVALS
+        </h4>
+        <img src="img/awards.png" class="img-fluid w-100" alt="" />
+      </div>
+    </section>
+    <!-- awards -->
+
+    <!-- history -->
+    <section class="history py-5">
+      <div class="container">
+        <h4 class="text-yellow mb-5 text-uppercase fw-bold">HISTORY</h4>
+
+        <div class="history-holder position-relative">
+          <div class="grid cols-2 w-50">
+            <div class="history-item border-start p-3 pt-0 position-relative">
+              <span class="year bg-black text-white"> 2020 </span>
+              <p class="fs-14 fw-bold mb-0">FutureStages & Jettison</p>
+              <p class="mb-0 fs-14">
+                Released free playhouse for artists trapped at home. First
+                prototype performance of stage play, Jettison at HERE Festival
+                becomes Finalist for Producer Guild of America’s Innovation
+                Award
+              </p>
+            </div>
+            <div class="history-item desktop border-start p-3 pt-0 position-relative">
+              <span class="year bg-black text-white"> 2022 </span>
+              <p class="fs-14 fw-bold mb-0">Experience as a Service</p>
+              <p class="mb-0 fs-14">
+                Continued showcases in partnership with festivals and
+                conferences to seed original programming, panels, and workshops
+                at FIVARS, PXR, MozFest, AWE, and Active Replica’s Contellation.
+              </p>
+            </div>
+            <div class="history-item mobile border-start p-3 pb-0 d-flex flex-column justify-content-end position-relative">
+                <span class="year year-top bg-black text-white"> 2021 </span>
+                <p class="fs-14 fw-bold mb-0">Seasonal Showcase</p>
+                <p class="mb-0 fs-14">
+                  Hosted 3 showcase cycles during the Spring, Summer and Fall to
+                  support and monetize 25 cutting-edge immersive web prototypes
+                </p>
+              </div>
+          </div>
+          <div class="line my-4"></div>
+          <div class="grid cols-2 w-50 ms-200">
+            <div class="history-item desktop border-start p-3 pb-0 d-flex flex-column justify-content-end position-relative">
+              <span class="year year-top bg-black text-white"> 2021 </span>
+              <p class="fs-14 fw-bold mb-0">Seasonal Showcase</p>
+              <p class="mb-0 fs-14">
+                Hosted 3 showcase cycles during the Spring, Summer and Fall to
+                support and monetize 25 cutting-edge immersive web prototypes
+              </p>
+            </div>
+            <div class="history-item mobile mt-3 border-start p-3 pt-0 position-relative">
+                <span class="year bg-black text-white"> 2022 </span>
+                <p class="fs-14 fw-bold mb-0">Experience as a Service</p>
+                <p class="mb-0 fs-14">
+                  Continued showcases in partnership with festivals and
+                  conferences to seed original programming, panels, and workshops
+                  at FIVARS, PXR, MozFest, AWE, and Active Replica’s Contellation.
+                </p>
+              </div>
+            <div class="history-item border-start p-3 pb-0 d-flex flex-column justify-content-end position-relative">
+              <span class="year year-top bg-black text-white"> 2023 </span>
+              <p class="fs-14 fw-bold mb-0">Mainstage Events</p>
+              <p class="mb-0 fs-14">
+                Began touring and staging three full-format productions from
+                early prototypes. <br />
+                - Mindland recieves UK Grant <br />
+                - Discordance receives Young-Howze Theater Award <br />
+                - Non-Player Character finalist for VR Awards
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- history -->
+
+    <!-- contact -->
+    <section class="contact py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="mb-0 fw-bolder">WANT TO BRING YOUR NEXT EVENT OR STORY INTO THE IMMERSIVE WEB?</h4>
+                <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="btn btn-outline-light lead text-uppercase px-5 border-2 fw-bold">
+                    Contact Our Team <i class="fas fa-long-arrow-alt-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+
+    <!-- footer -->
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <p class="fw-bold text-white text-uppercase">
+                        Product
+                    </p>
+                    <ul class="list-unstyled m-0 p-0">
+                        <li>
+                            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="text-white text-decoration-none fs-14">
+                                Features & Roadmap
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="text-white text-decoration-none fs-14">
+                               Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="text-white text-decoration-none fs-14">
+                                Professional Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="text-white text-decoration-none fs-14">
+                                Pricings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="text-white text-decoration-none fs-14">
+                                Schedule a Demo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="fw-bold text-white text-uppercase">
+                        DOcs
+                    </p>
+                    <ul class="list-unstyled m-0 p-0">
+                        <li>
+                            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="text-white text-decoration-none fs-14">
+                                What is XR?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="text-white text-decoration-none fs-14">
+                               Get Started Guide
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="text-white text-decoration-none fs-14">
+                                Knowledge Base
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs" class="text-white text-decoration-none fs-14">
+                                API Documentation
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 offset-md-3">
+                    <p class="fw-bold text-white text-uppercase">
+                        DOcs
+                    </p>
+                    <form action="">
+                        <input required placeholder="Your email address*" type="text" class="form-control bg-transparent border-b border-yellow rounded-0 name="" id="">
+                        <button class="btn btn-yellow mt-3 px-4 rounded-3 py-1 fw-bolder text-white">
+                            SUBMIT
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <p class="mt-4 text-white fs-14">
+                © Copyright 2021 OnBoardXR
+            </p>
+        </div>
+    </footer>
+    <!-- footer -->
+    
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/app.js"></script>
   </body>
 </html>
