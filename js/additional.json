@@ -1,5 +1,13 @@
 [
     {
+        "name": "Test Add One",
+        "topDate": "Aug '23",
+        "date": "Aug 15",
+        "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
+        "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_NPC-Listening-Square.png",
+        "tags": ["Unwanted", "london", "uk", "rock", "pop", "indie"]
+    },
+    {
         "name": "Unwanted-Waters",
         "topDate": "Aug '22",
         "date": "Aug 15",
