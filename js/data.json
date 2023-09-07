@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Mindland",
+        "topDate": "Aug '22",
+        "date": "Aug 15",
+        "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
+        "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mindland-Square.png",
+        "tags": ["dance", "music", "theater", "comedy", "talk", "variety"]
+    },
+    {
+        "name": "Magid",
+        "topDate": "Aug '22",
+        "date": "Aug 15",
+        "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
+        "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Magid-Square.png",
+        "tags": ["music", "london", "uk", "rock", "pop", "indie"]
+    },
+    {
+        "name": "Windward-Wandering",
+        "topDate": "Aug '22",
+        "date": "Aug 15",
+        "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
+        "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Windward-Wandering-Square.png",
+        "tags": ["game", "adventure", "action", "rpg", "fantasy", "sci-fi"]
+    },
+    {
+        "name": "Stars-Spaceholder",
+        "topDate": "Aug '22",
+        "date": "Aug 15",
+        "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
+        "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Spaceholder-Square.png",
+        "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety", "maruf"]
+    },
+    {
+        "name": "Mrs-Nemo",
+        "topDate": "Aug '22",
+        "date": "Aug 15",
+        "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
+        "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mrs-Nemo-Square.png",
+        "tags": ["landing", "page", "website", "web", "design", "development"]
+    },
+    {
+        "name": "Unwanted-Waters",
+        "topDate": "Aug '22",
+        "date": "Aug 15",
+        "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
+        "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Unwanted-Waters-Square.png",
+        "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety"]
+    }
+]
