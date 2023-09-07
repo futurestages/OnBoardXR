@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OnBoardXR</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- alert -->
+    <div
+      class="alert mb-0 alert-warning alert-dismissible fade show"
+      role="alert"
+    >
+      <div class="container d-flex justify-content-between align-items-start">
+        <strong class="text-white lead"
+          >This is a banner pop-up that we can easily update with news.</strong
+        >
+        <button
+          type="button"
+          data-bs-dismiss="alert"
+          class="btn lead"
+          aria-label="Close"
+        >
+          <i class="fa fa-times lead text-white"></i>
+        </button>
+      </div>
+    </div>
+    <!-- alert -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="img/logo.png" class="logo" alt="" />
+        </a>
+        <button
+          class="navbar-toggler border-0 outline-0 shadow-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto gap-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                >SHOWCASE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                >TOOLS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                >NEWS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                >ABOUT</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex ms-5" role="search">
+            <input
+              class="form-control me-2 border-yellow rounded-0 bg-transparent text-white"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- search result -->
+    <section class="search-result bg-success">
+      <div class="container">
+        <div id="result" class="fw-bold lead text-white"></div>
+      </div>
+    </section>
+    <!-- search result -->
+
+    <!-- hero -->
+    <section class="hero py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-7 m-auto">
+            <h1 class="text-white fw-bold title">
+              Live Immersive Performances
+            </h1>
+            <h4 class="text-white mb-5">
+              We onboard the artists and audiences of the future by fostering
+              tools and talent for the future of live events in the 3D Web.
+            </h4>
+            <a
+              href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+              class="btn btn-yellow"
+            >
+              Have a Code?
+            </a>
+          </div>
+          <div class="col-md-5 m-auto">
+            <div class="card border-0 mt-5 rounded-4 overflow-hidden bg-black">
+              <div
+                class="img-holder position-relative rounded-4 overflow-hidden"
+              >
+                <img src="img/hero.gif" class="img-fluid w-100" alt="" />
+                <div class="overlay">
+                  <h3 class="text-white fw-bold mb-5">Sample Lobby</h3>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="">
+                      <img src="img/keys.png" class="img-fluid keys" alt="" />
+                      <p class="text-white">Use your keyboard to move</p>
+                    </div>
+                    <div class="">
+                      <img src="img/cursor.png" class="img-fluid keys" alt="" />
+                      <p class="text-white">Use your mouse to rotate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body bg-black">
+                <h4 class="text-white mb-0">XR Theater Lobby</h4>
+                <p class="text-white">
+                  Test your controls in our Sponsor Lobby
+                </p>
+                <div class="text-end">
+                  <a
+                    href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                    class="btn btn-yellow"
+                  >
+                    Enter
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero -->
+
+    <!-- showcase -->
+    <section class="showcase py-5">
+      <div class="container">
+        <h4 class="text-yellow mb-5 text-uppercase fw-bold">
+          IMMERSIVE SHOWCASES
+        </h4>
+
+        <div class="row g-3" id="showcase"></div>
+      </div>
+    </section>
+    <!-- showcase -->
+
+    <!-- awards -->
+    <section class="awards py-5">
+      <div class="container">
+        <h4 class="text-yellow mb-5 text-uppercase fw-bold">
+          AWARDS AND FESTIVALS
+        </h4>
+        <div class="award-holder">
+          <div class="grid-5 w-75 m-auto">
+            <img src="img/award1.png" class="img-fluid p-3" alt="" />
+            <img src="img/award1.png" class="img-fluid p-3" alt="" />
+            <img src="img/award1.png" class="img-fluid p-3" alt="" />
+            <img src="img/award1.png" class="img-fluid p-3" alt="" />
+            <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          </div>
+          <div class="grid-6 w-75 m-auto">
+            <img src="img/award1.png" class="img-fluid p-4" alt="" />
+            <img src="img/award1.png" class="img-fluid p-4" alt="" />
+            <img src="img/award1.png" class="img-fluid p-4" alt="" />
+            <img src="img/award1.png" class="img-fluid p-4" alt="" />
+            <img src="img/award1.png" class="img-fluid p-4" alt="" />
+            <img src="img/award1.png" class="img-fluid p-4" alt="" />
+          </div>
+        </div>
+
+        <div class="mobile-award">
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+          <img src="img/award1.png" class="img-fluid p-3" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- awards -->
+
+    <!-- history -->
+    <section class="history py-5">
+      <div class="container">
+        <h4 class="text-yellow mb-5 text-uppercase fw-bold">HISTORY</h4>
+
+        <div class="history-holder position-relative">
+          <div class="grid cols-2">
+            <div class="history-item border-start p-3 pt-0 position-relative">
+              <span class="year bg-black text-white"> 2020 </span>
+              <p class="fs-14 fw-bold mb-0">FutureStages & Jettison</p>
+              <p class="mb-0 fs-14">
+                Released free playhouse for artists trapped at home. First
+                prototype performance of stage play, Jettison at HERE Festival
+                becomes Finalist for Producer Guild of America’s Innovation
+                Award
+              </p>
+            </div>
+            <div
+              class="history-item desktop border-start p-3 pt-0 position-relative"
+            >
+              <span class="year bg-black text-white"> 2022 </span>
+              <p class="fs-14 fw-bold mb-0">Experience as a Service</p>
+              <p class="mb-0 fs-14">
+                Continued showcases in partnership with festivals and
+                conferences to seed original programming, panels, and workshops
+                at FIVARS, PXR, MozFest, AWE, and Active Replica’s Contellation.
+              </p>
+            </div>
+            <div
+              class="history-item mobile border-start p-3 pb-0 d-flex flex-column justify-content-end position-relative"
+            >
+              <span class="year year-top bg-black text-white"> 2021 </span>
+              <p class="fs-14 fw-bold mb-0">Seasonal Showcase</p>
+              <p class="mb-0 fs-14">
+                Hosted 3 showcase cycles during the Spring, Summer and Fall to
+                support and monetize 25 cutting-edge immersive web prototypes
+              </p>
+            </div>
+          </div>
+          <div class="line my-4"></div>
+          <div class="grid cols-2 ms-200">
+            <div
+              class="history-item desktop border-start p-3 pb-0 d-flex flex-column justify-content-end position-relative"
+            >
+              <span class="year year-top bg-black text-white"> 2021 </span>
+              <p class="fs-14 fw-bold mb-0">Seasonal Showcase</p>
+              <p class="mb-0 fs-14">
+                Hosted 3 showcase cycles during the Spring, Summer and Fall to
+                support and monetize 25 cutting-edge immersive web prototypes
+              </p>
+            </div>
+            <div
+              class="history-item mobile mt-3 border-start p-3 pt-0 position-relative"
+            >
+              <span class="year bg-black text-white"> 2022 </span>
+              <p class="fs-14 fw-bold mb-0">Experience as a Service</p>
+              <p class="mb-0 fs-14">
+                Continued showcases in partnership with festivals and
+                conferences to seed original programming, panels, and workshops
+                at FIVARS, PXR, MozFest, AWE, and Active Replica’s Contellation.
+              </p>
+            </div>
+            <div
+              class="history-item border-start p-3 pb-0 d-flex flex-column justify-content-end position-relative"
+            >
+              <span class="year year-top bg-black text-white"> 2023 </span>
+              <p class="fs-14 fw-bold mb-0">Mainstage Events</p>
+              <p class="mb-0 fs-14">
+                Began touring and staging three full-format productions from
+                early prototypes. <br />
+                - Mindland recieves UK Grant <br />
+                - Discordance receives Young-Howze Theater Award <br />
+                - Non-Player Character finalist for VR Awards
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- history -->
+
+    <!-- contact -->
+    <section class="contact py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="mb-0 fw-bolder">
+            WANT TO BRING YOUR NEXT EVENT OR STORY INTO THE IMMERSIVE WEB?
+          </h4>
+          <a
+            href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+            class="btn btn-outline-light lead text-uppercase px-5 border-2 fw-bold"
+          >
+            Contact Our Team <i class="fas fa-long-arrow-alt-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+
+    <!-- footer -->
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-3">
+            <p class="fw-bold text-white text-uppercase">Product</p>
+            <ul class="list-unstyled m-0 p-0">
+              <li>
+                <a
+                  href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                  class="text-white text-decoration-none fs-14"
+                >
+                  Features & Roadmap
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                  class="text-white text-decoration-none fs-14"
+                >
+                  Solutions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                  class="text-white text-decoration-none fs-14"
+                >
+                  Professional Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                  class="text-white text-decoration-none fs-14"
+                >
+                  Pricings
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                  class="text-white text-decoration-none fs-14"
+                >
+                  Schedule a Demo
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="fw-bold text-white text-uppercase">DOcs</p>
+            <ul class="list-unstyled m-0 p-0">
+              <li>
+                <a
+                  href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                  class="text-white text-decoration-none fs-14"
+                >
+                  What is XR?
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                  class="text-white text-decoration-none fs-14"
+                >
+                  Get Started Guide
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                  class="text-white text-decoration-none fs-14"
+                >
+                  Knowledge Base
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://futurestages.github.io/OnBoardXR_Landing_Page/docs"
+                  class="text-white text-decoration-none fs-14"
+                >
+                  API Documentation
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 offset-md-3">
+            <p class="fw-bold text-white text-uppercase">CONTACT</p>
+            <form action="mailto:admin@nboardxr.com">
+              <input
+                required
+                placeholder="Your email address*"
+                type="text"
+                class="form-control text-white placeholder-white bg-transparent border-b border-yellow rounded-0"
+                name=""
+                id=""
+              />
+              <button
+                class="btn btn-yellow mt-3 px-4 rounded-3 py-1 fw-bolder text-white"
+              >
+                SUBMIT
+              </button>
+            </form>
+          </div>
+        </div>
+        <p class="mt-4 text-white fs-14">© Copyright 2021 OnBoardXR</p>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/app.js"></script>
+
+    <!-- <ul class="react-multi-carousel-track "
+    style="transition: transform 400ms ease-in-out 0s; overflow: unset; transform: translate3d(-5616px, 0px, 0px);">
+    <li data-index="0" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card">
+        
+        <img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mindland-Square.png"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+
+
+
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">AUG '22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr8.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://www.eventbrite.co.uk/e/mindland-improvised-solo-performance-in-vr-tickets-393961117307">Mindland</a><br>
+            <h6 class="text-white text-decoration-none "> Aug 15 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+              width="75px" height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="1" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Magid-Square.png"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">AUG '22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr8.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://www.eventbrite.com/e/magid-tickets-396319691867">Magid</a><br>
+            <h6 class="text-white text-decoration-none "> Aug 17 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+              width="75px" height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="2" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Windward-Wandering-Square.png"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">AUG '22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr8.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://https//tinyurl.com/leewardport">Windward Wandering, Leeward Port</a><br>
+            <h6 class="text-white text-decoration-none "> Aug 24 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+              width="75px" height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="3" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Spaceholder-Square.png"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">AUG '22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr8.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://www.eventbrite.com/e/spaceholder-a-live-xr-performance-tickets-394658202307">Spaceholder</a><br>
+            <h6 class="text-white text-decoration-none "> Aug 26 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+              width="75px" height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="4" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mrs-Nemo-Square.png"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">AUG '22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr8.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://www.eventbrite.co.uk/e/mrs-nemo-xr-tickets-401377419667">Mrs. Nemo</a><br>
+            <h6 class="text-white text-decoration-none "> Aug 27 &amp; Aug 28 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+              width="75px" height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="5" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Unwanted-Waters-Square.png"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">AUG '22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr8.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://www.eventbrite.co.uk/e/constellation-unwanted-waters-our-brave-space-talk-qa-tickets-399510676187">Unwanted
+              Waters</a><br>
+            <h6 class="text-white text-decoration-none "> Aug 30 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+              width="75px" height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="6" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_NPC-Listening-Square.png"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">SEP '22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr8.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://music.apple.com/album/1634852775?app=itunes">NPC Listening Room</a><br>
+            <h6 class="text-white text-decoration-none "> Sep 2 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png"
+              width="75px" height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="7" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.21challenge.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">MAY'22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr5.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.anny.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://www.brendanabradley.com/futurestages/21-day-challenge">OnBoardXR Season 5</a><br>
+            <h6 class="text-white text-decoration-none "> May 13-31 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.anny.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="8" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.obxr4.jpg"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">MAR'22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr4.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.mozfest.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://schedule.mozillafestival.org/session/JGNCQE-1?ref=share">OnBoardXR Season 4</a><br>
+            <h6 class="text-white text-decoration-none "> MozFest March 7-11 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.mozfest.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="9" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.polys.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">FEB'22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="https://thepolys.com/">The Poly's</a><br>
+            <h6 class="text-white text-decoration-none "> Live Halftime Show </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.polys.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="10" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.mindland.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">JAN'22</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://www.youtube.com/watch?v=K9BMHSmCSXE">MindLand</a><br>
+            <h6 class="text-white text-decoration-none "> Naomi Smyth </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.artscouncileng.png"
+              width="75px" height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="11" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.nonplayercharacter.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">DEC'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://vimeo.com/670099704/8fd83610b1">Non-Player Character</a><br>
+            <h6 class="text-white text-decoration-none "> Mugar Omni Theater </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.museumofscience.png"
+              width="75px" height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="12" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.dancingmetaverse.png"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">NOV'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="https://youtu.be/aNg-gqZNYR0?t=3111">Dancing
+              In
+              The Metaverse</a><br>
+            <h6 class="text-white text-decoration-none "> Unwired Dance Theatre </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.ukri.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="13" aria-hidden="false"
+      class="react-multi-carousel-item react-multi-carousel-item--active carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.mrsnemo.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">OCT'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr3.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://fivars.net/news/fivars-2021-spotlight-onboardxr-the-aquaians/">Mrs. Nemo</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 3 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="14" aria-hidden="false"
+      class="react-multi-carousel-item react-multi-carousel-item--active carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.unwantedwaters.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">OCT'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr3.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://fivars.net/news/fivars-2021-spotlight-onboardxr-the-aquaians/">Unwanted Waters</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 3 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="15" aria-hidden="false"
+      class="react-multi-carousel-item react-multi-carousel-item--active carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.deepsshallows.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">OCT'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr3.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://fivars.net/news/fivars-2021-spotlight-onboardxr-the-aquaians/">Deeps &amp; Shallows</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 3 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="16" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.letsgettobottom.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">OCT'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr3.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://fivars.net/news/fivars-2021-spotlight-onboardxr-the-aquaians/">Let's Get To The Bottom
+              (NPC)</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 3 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="17" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.waterhorse.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">OCT'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr3.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://fivars.net/news/fivars-2021-spotlight-onboardxr-the-aquaians/">Water Horse</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 3 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="18" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.aquaians.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">OCT'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr3.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png"
+                height="50px" width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://fivars.net/news/fivars-2021-spotlight-onboardxr-the-aquaians/">The Aquaians</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 3 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.fivars.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="19" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.haroundesert.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">JUL'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr2.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">Haroun Desert</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 2 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="20" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.maidenvoyage.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">JUL'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr2.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">Maiden Voyage</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 2 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="21" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.piratepainting.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">JUL'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr2.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">Painting Pirates</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 2 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="22" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.smarthome.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">JUL'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr2.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">Smart Home</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 2 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="23" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.whoami.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">JUL'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr2.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">Who Am I? Where Am I?</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 2 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="24" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.stringsprisoner.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">JUL'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr2.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">Strings: Prisoner</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 2 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="25" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.thisland.png"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">MAR'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr1.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">This Land Is Island</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 1 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="26" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.jettison2.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">MAR'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr1.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">Jettison</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 1 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="27" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.spongebob.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">MAR'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr1.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">The Play That Is Going To Change
+              Everything</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 1 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="28" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.stringsunderwater.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">MAR'21</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.obxr1.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none" href="">Strings: Underwater</a><br>
+            <h6 class="text-white text-decoration-none "> OnBoardXR Season 1 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.blank.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li data-index="29" aria-hidden="true" class="react-multi-carousel-item  carousel-item-padding-40-px"
+      style="flex: 1 1 auto; position: relative; width: 432px;">
+      <div class="text-dark m-4 mobile_res card"><img
+          src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.jettison1.gif"
+          class="sc-bdfBQB kGAsFs img-fluid card-img">
+        <div class="overlay_top_res card-overlay-black d-flex flex-column justify-content-between p-3 card-img-overlay">
+          <div class="h3 ">
+            <p class="text-white text-decoration-none">OCT'20</p>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <div class="m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.here.png" height="60px"
+                width="60px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+            <div class="align-items-right m-3"><img
+                src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.hubs.png" height="50px"
+                width="50px">
+              <p class="text-white text-decoration-none"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay_bottom_res card-overlay2-black d-flex flex-column justify-content-between  p-4 card-img-overlay">
+          <div class="h5"><a class="text-white text-decoration-none"
+              href="https://en.wikipedia.org/wiki/Tyreek_Hill">Jettison</a><br>
+            <h6 class="text-white text-decoration-none "> HERE Fest Oct 2020 </h6>
+          </div>
+          <div class="d-flex justify-content-between m-2"><img
+              src="https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/festival.here.png" width="75px"
+              height="75px">
+            <div class="align-items-right m-2"><button type="button" class="btn btn-primary"
+                style="border-width: 0px; border-radius: 35px; background-color: yellow; color: black;">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul> -->
+  </body>
+</html>

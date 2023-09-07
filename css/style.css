@@ -1,0 +1,268 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* alert */
+.alert-warning {
+  background-color: #dfc012;
+  border-radius: 0;
+  border: unset;
+}
+
+/* header */
+.logo {
+  width: 150px;
+}
+.border-yellow {
+  border: 2px solid #dfc012;
+}
+.border-yellow::placeholder {
+  color: #68727a;
+}
+
+/* hero */
+.hero {
+  background: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.title {
+  font-size: 44px !important;
+  font-weight: 800 !important;
+}
+
+.btn-yellow {
+  background-color: #dfc012 !important;
+  border-radius: 0;
+  border: unset;
+  color: #000 !important;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding: 15px;
+}
+.keys {
+  height: 60px;
+}
+
+/* showcase */
+.showcase {
+  background-color: #121212;
+}
+.text-yellow {
+  color: #dfc012;
+}
+.obxr {
+  height: 45px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 100;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.hover-content:hover {
+  opacity: 1;
+}
+.card {
+  cursor: pointer;
+}
+
+/* history */
+.grid {
+  display: grid;
+}
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.line {
+  height: 4px;
+  width: 100%;
+  background-color: black;
+}
+.ms-200 {
+  margin-left: 200px;
+}
+.border-start {
+  border-left: 1px solid #919191 !important;
+}
+.year {
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+  left: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year-top {
+  top: -50px;
+  bottom: unset;
+}
+
+/* contact */
+.contact {
+  background-color: #dfc012;
+}
+
+/* footer */
+
+.border-b {
+  border-width: 0 0 2px 0 !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+.mobile {
+  display: none !important;
+}
+
+.z-200 {
+  position: relative;
+  z-index: 200;
+}
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.mobile-award {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .alert {
+    padding: 10px 0;
+  }
+  .alert * {
+    font-size: 15px !important;
+  }
+  .navbar-nav.gap-5 {
+    gap: 4px !important;
+  }
+  nav form.d-flex.ms-5 {
+    margin: 0 !important;
+  }
+  .hero {
+    padding-top: 100px !important;
+  }
+  .hero a.btn.btn-yellow {
+    width: 100% !important;
+    display: block;
+  }
+  .title {
+    font-size: 30px !important;
+    font-weight: 800 !important;
+  }
+  .year {
+    top: 0;
+    left: 0;
+    bottom: unset;
+  }
+  .line {
+    display: none;
+  }
+  .history-item {
+    padding-left: 70px !important;
+    border: unset !important;
+  }
+  .ms-200 {
+    margin-left: 0;
+  }
+  .justify-content-end {
+    justify-content: flex-start !important;
+  }
+  .cols-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .w-50 {
+    width: 100% !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .history .pb-0 {
+    padding-top: 0px !important;
+  }
+  .contact .d-flex {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  footer * {
+    text-align: center;
+  }
+  .grid-5,
+  .grid-6 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .grid-5 img,
+  .grid-6 img {
+    width: 100px;
+    display: block;
+    margin: auto;
+    padding: 5px 0 !important;
+  }
+  .award-holder {
+    display: none;
+  }
+  .mobile-award {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+  }
+  .mobile-award img {
+    width: 100px;
+    display: block;
+    margin: 0 20px;
+    padding: 5px 0 !important;
+  }
+  .awards {
+    padding-bottom: 0 !important;
+  }
+}
