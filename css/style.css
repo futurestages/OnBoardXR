@@ -167,6 +167,45 @@ body {
   display: none;
 }
 
+/* about page */
+.py-50 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.quote {
+  font-style: italic;
+}
+img.icons {
+  width: 200px;
+}
+
+.avatar-img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+}
+.avatar-sm {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+}
+.nav-link.active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  left: 0;
+}
+.nav-link {
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
   .alert {
     padding: 10px 0;
@@ -264,5 +303,50 @@ body {
   }
   .awards {
     padding-bottom: 0 !important;
+  }
+  .news-showcase {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .cols .row {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .rev-cols .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cols {
+    padding-bottom: 0 !important;
+  }
+  .last {
+    padding-bottom: 50px !important;
+  }
+  img.icons {
+    display: none;
+  }
+  .ven {
+    padding-bottom: 0 !important;
+  }
+  .ven img {
+    margin-bottom: 20px;
+  }
+  .advisors .profile-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  .past-participants .fs-14 {
+    font-size: 12px;
+  }
+  .scroll-x {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
   }
 }
