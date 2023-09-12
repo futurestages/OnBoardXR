@@ -5,7 +5,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mindland-Square.png",
-    "tags": ["dance", "music", "theater", "comedy", "talk", "variety"]
+    "tags": ["dance", "music", "theater", "comedy", "talk", "variety"],
+    "descTitle" : "Title from the data 1",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Magid",
@@ -13,7 +15,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Magid-Square.png",
-    "tags": ["music", "london", "uk", "rock", "pop", "indie"]
+    "tags": ["music", "london", "uk", "rock", "pop", "indie"],
+    "descTitle" : "Title from the data 2",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Windward-Wandering",
@@ -21,7 +25,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Windward-Wandering-Square.png",
-    "tags": ["game", "adventure", "action", "rpg", "fantasy", "sci-fi"]
+    "tags": ["game", "adventure", "action", "rpg", "fantasy", "sci-fi"],
+    "descTitle" : "Title from the data 3",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Stars-Spaceholder",
@@ -38,7 +44,9 @@
       "talk",
       "variety",
       "maruf"
-    ]
+    ],
+    "descTitle" : "Title from the data 4",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Mrs-Nemo",
@@ -46,7 +54,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Mrs-Nemo-Square.png",
-    "tags": ["landing", "page", "website", "web", "design", "development"]
+    "tags": ["landing", "page", "website", "web", "design", "development"],
+    "descTitle" : "Title from the data 5",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Unwanted-Waters",
@@ -54,7 +64,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_Unwanted-Waters-Square.png",
-    "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety"]
+    "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety"],
+    "descTitle" : "Title from the data 6",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Unwanted-Waters",
@@ -62,7 +74,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_NPC-Listening-Square.png",
-    "tags": ["music", "london", "uk", "rock", "pop", "indie"]
+    "tags": ["music", "london", "uk", "rock", "pop", "indie"],
+    "descTitle" : "Title from the data 7",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "21 Day Challenge",
@@ -70,7 +84,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/logo.21challenge.gif",
-    "tags": ["game", "adventure", "action", "rpg", "fantasy", "sci-fi"]
+    "tags": ["game", "adventure", "action", "rpg", "fantasy", "sci-fi"],
+    "descTitle" : "Title from the data 8",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Power of Registry",
@@ -78,7 +94,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.obxr4.jpg",
-    "tags": ["landing", "page", "website", "web", "design", "development"]
+    "tags": ["landing", "page", "website", "web", "design", "development"],
+    "descTitle" : "Title from the data 9",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "The Polys Show",
@@ -86,7 +104,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.polys.gif",
-    "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety"]
+    "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety"],
+    "descTitle" : "Title from the data 10",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "The Mindland Show",
@@ -94,7 +114,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.mindland.gif",
-    "tags": ["music", "london", "uk", "rock", "pop", "indie"]
+    "tags": ["music", "london", "uk", "rock", "pop", "indie"],
+    "descTitle" : "Title from the data 11",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "The Non Player Show",
@@ -102,7 +124,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.nonplayercharacter.gif",
-    "tags": ["game", "adventure", "action", "rpg", "fantasy", "sci-fi"]
+    "tags": ["game", "adventure", "action", "rpg", "fantasy", "sci-fi"],
+    "descTitle" : "Title from the data 12",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Mrs Nemo's Show",
@@ -110,7 +134,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.mrsnemo.gif",
-    "tags": ["landing", "page", "website", "web", "design", "development"]
+    "tags": ["landing", "page", "website", "web", "design", "development"],
+    "descTitle" : "Title from the data 13",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Unwanted-Waters Show",
@@ -118,7 +144,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.unwantedwaters.gif",
-    "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety"]
+    "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety"],
+    "descTitle" : "Title from the data 14",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Let's Go Bottom",
@@ -126,7 +154,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.letsgettobottom.gif",
-    "tags": ["music", "london", "uk", "rock", "pop", "indie"]
+    "tags": ["music", "london", "uk", "rock", "pop", "indie"],
+    "descTitle" : "Title from the data 15",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Aquaians",
@@ -134,7 +164,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.aquaians.gif",
-    "tags": ["game", "adventure", "action", "rpg", "fantasy", "sci-fi"]
+    "tags": ["game", "adventure", "action", "rpg", "fantasy", "sci-fi"],
+    "descTitle" : "Title from the data 16",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Maiden Voyage",
@@ -142,7 +174,9 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.maidenvoyage.gif",
-    "tags": ["landing", "page", "website", "web", "design", "development"]
+    "tags": ["landing", "page", "website", "web", "design", "development"],
+    "descTitle" : "Title from the data 17",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   },
   {
     "name": "Smart Home",
@@ -150,6 +184,8 @@
     "date": "Aug 15",
     "brandLogo": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/OnBoard_Charting-the-Stars_AR-Constellation.png",
     "banner": "https://futurestages.github.io/OnBoardXR_Landing_Page/static/media/show.smarthome.gif",
-    "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety"]
+    "tags": ["dance", "game", "music", "theater", "comedy", "talk", "variety"],
+    "descTitle" : "Title from the data 18",
+    "description": "Our powerful rendering technology empowers businesses to maximize reach while simplifying 3D and XR content creation, curation and consumption"
   }
 ]

@@ -33,12 +33,10 @@ const loadDataFromJson = () => {
 
             <div class="hover-content p-2">
               <h6 class="text-white fw-bold">
-                OS, BROWSER & DEVICE AGNOSTIC
+                ${item.descTitle}
               </h6>
               <p class="fs-14 text-white mb-0">
-                Our powerful rendering technology empowers businesses to
-                maximize reach while simplifying 3D and XR content creation,
-                curation and consumption
+                ${item.description.length > 130 ? item.description.substring(0, 100) + "..." : item.description}
               </p>
             </div>
           </div>
